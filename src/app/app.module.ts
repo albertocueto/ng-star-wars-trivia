@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdToolbarModule, MdListModule, MdLineModule } from '@angular/material';
+import 'hammerjs';
 import { MoviesModule } from './modules/movies/movies.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +21,11 @@ import { PageNotFoundComponent } from './components/page-not-found.component';
   imports: [
     BrowserModule,
     MoviesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MdToolbarModule,
+    MdListModule,
+    MdLineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

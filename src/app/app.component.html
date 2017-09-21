@@ -1,11 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{title}}
-  </h1>
-</div>
+<md-toolbar color="primary">
+  <span>{{title}}</span>
+  <md-toolbar-row>
+    <button md-button routerLink="/movies">M O V I E S</button>
+    <button md-button routerLink="/characters">C H A R A C T E R S</button>
+  </md-toolbar-row>
+</md-toolbar>
 
-  <p><a routerLink="/movies">M O V I E S</a></p>
-  <p><a routerLink="/characters">C H A R A C T E R S</a></p>
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
